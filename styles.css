@@ -32,6 +32,8 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 figure {
@@ -41,7 +43,7 @@ figure {
 
 .row>img {
   margin: 5px;
-  max-height: 250px;
+  max-height: 500px;
 }
 
 main {
