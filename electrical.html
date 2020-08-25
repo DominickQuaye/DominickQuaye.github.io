@@ -1,0 +1,143 @@
+<html>
+
+<head>
+  <title>Dominick Q</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main role="main" class="container">
+    <h1>Electronics</h1>
+    <h2>8kV DC @50mA Half Wave Cockroft-Walton voltage multiplier</h2>
+    <p>
+      This voltage multiplier is the most recent iteration of my Demo Fusor
+      power supply. It is a 4 stage Half Wave Cockroft-Walton voltage
+      multiplyer. The voltage multiplier, as the name implies, multiplies the
+      input AC voltage by the number of stages. Thus it has a ~8kV output
+      (accounting for voltage drop) when given a 2100VAC input from a
+      Microwave Oven transformer. The multiplier works on the principle of
+      charging the capacitors in parallel and then discharging them in series.
+      This is done by adding a diode array similar to a half-wave rectifier
+      along the multiplyer. This also results in a negative DC output from the
+      multiplyer. Every diode and capacitor in the multiplyer (as well as the
+      driving transformer) was salvaged from a broken microwave for free.
+    </p>
+    <div class="row justify-content-center">
+      <img src="electrical_files/image002.jpg" />
+      <img src="electrical_files/image004.jpg" />
+      <img src="electrical_files/image006.jpg" />
+      <img src="electrical_files/image007.png" />
+      <img src="electrical_files/image009.jpg" />
+    </div>
+
+
+    <article>
+      <h2>36v @250A Stick welder</h2>
+      <div class="row justify-content-center">
+        <img src="electrical_files/image011.jpg" />
+        <img src="electrical_files/image013.jpg" />
+        <img src="electrical_files/image015.jpg" />
+        <img src="electrical_files/image017.jpg" />
+      </div>
+      <p>
+        I made this fully functional 250A Stick welder by repurposing two large
+        1kW transformers from 2 broken microwaves. I first drilled out the
+        secondary winding and cracked the welds open using an angle grinder.
+        Using a custom wood jig, I wound a coil of 8 gauge stranded copper wire
+        6 turns high and 3 turns wide for a total of 18 turns. The new coils
+        were then removed from the jig, taped up, and pressed back into the
+        transformer. I then reattached the base plate I had grinded off with
+        epoxy. Next I attached the power cable from the microwave to the
+        transformers in series using some cable connectors. I crimped little
+        sections of scrap copper pipe to the ends of the secondary to provide
+        good high current connections to the welding cable. This entire setup
+        was screwed down onto a small piece of plywood for convenience. To reach
+        the 36v @250A output goal, the power supply needs a 240v input. So the
+        final measure to make the welder work was taking two hot leads (180
+        degrees out of phase) from two isolated circuits in my house and
+        connecting them to the single cable feeding into the supply. Although it
+        looks a little sketchy this device can output more current than many
+        commercial hobby welders, and is capable of making solid welds even on
+        stainless steel.
+      </p>
+      <div class="row justify-content-center">
+        <img src="electrical_files/image019.jpg" />
+        <img src="electrical_files/image021.jpg" />
+        <img src="electrical_files/image023.jpg" />
+        <img src="electrical_files/image025.jpg" />
+        <img src="electrical_files/image027.jpg" />
+        <img src="electrical_files/image029.jpg" />
+        <img src="electrical_files/image031.jpg" />
+      </div>
+    </article>
+    <article>
+      <h2>4.4kv DC @200 mA power supply</h2>
+      <p>
+        This setup uses two MOTs connected in series (with the center tapped
+        cores paired together as well) out of phase, giving a 4.2kv output. I
+        have used this supply for numerous applications:
+      </p>
+      <ul>
+        <li>
+          By hooking it up to my variable water resistor, variac and full bridge
+          microwave diode rectifier, I used this supply to get higher energy
+          plasma in the generator for a short time before I built my voltage
+          multiplier
+        </li>
+        <li>
+          By adding longer cables to the leads I can use it to make a
+          lichtenberg figure with slightly different shapes (due to the higher
+          voltage).
+        </li>
+        <li>
+          Finally, I mainly use this supply to make cool arcs which can be seen
+          below.
+        </li>
+      </ul>
+      <div class="row justify-content-center">
+        <img src="electrical_files/image033.jpg" />
+      </div>
+    </article>
+    <article>
+      <h2>10 KIlowatt, 0-150 KΩ Variable water resistor</h2>
+      <p>
+        I made this variable water resistor originally to ballast/current limit
+        my Demo Fusor power supply, but It has turned out to be an extremely
+        versatile device. I have now used it to control the current of my stick
+        welder, lichtenberg fractal burner, as well as a number of other smaller
+        safety applications at mains voltages. The device was made entirely out
+        of scrap parts. The tub is made of a dog food container I found in a
+        dumpster. The lid is simple scrap plywood with holes drilled out for the
+        two electrodes. The Electrodes are made of crushed copper tubing (also
+        from scrap) which are connected to some small ï¿½ï¿½ pvc sections. One
+        electrode is fixed in the device, and the other is placed on an axle
+        taken from a broken printer. The axel is fed through the pvc handle into
+        two pine blocks on either side, forming a crude ï¿½bearingï¿½ which
+        allows the handle to rotate freely. The tub is filled with water mixed
+        with about a gram of sodium hydroxide (adds free ions to the water
+        reducing losses). By moving the handle the distance between the
+        electrodes can be varied from 0-8ï¿½. The further current has to travel
+        through the resistive solution, the higher the resistance, so as a
+        result this distance translates to a resistance of anywhere from 0 Ohms
+        to 150 Kilohms. I designed this device to be very high power by using
+        low gauge wire for all connections, making large electrodes, and having
+        a large volume of solution to slow the rate of heating. I have used this
+        resistor to ballast my 36v welder at 250A and only experienced moderate
+        heating of the device, giving it a possible power rating of 10KW.
+      </p>
+      <div class="row justify-content-center">
+        <img src="electrical_files/image035.jpg" />
+        <img src="electrical_files/image037.jpg" />
+        <img src="electrical_files/image039.jpg" />
+
+        <img src="electrical_files/image041.jpg" />
+        <img src="electrical_files/image043.jpg" />
+      </div>
+    </article>
+  </main>
+</body>
+
+</html>

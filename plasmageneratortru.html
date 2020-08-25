@@ -1,0 +1,147 @@
+<html>
+
+<head>
+  <title>Dominick Q</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main role="main" class="container">
+    <h1>Inertial Electrostatic Confinement Plasma Generator</h1>
+    <div class="row justify-content-center">
+      <figure class="figure">
+        <img src="plasmageneratortru_files/image002.jpg" width=419 height=559 />
+        <figcaption class="figure-caption">A caption for the above image that would have been easier had someone told me
+          that it was expected to have a caption.</figcaption>
+      </figure>
+    </div>
+
+
+    <p>
+      This is a device was built out of mainly scrap parts over 6 months (I am still upgrading it daily). It creates
+      plasma through a process called inertial electrostatic confinement, or IEC. The basic layout consists of a vacuum
+      chamber with an anode and cathode, a vacuum system to generate the vacuum, a HV power supply, and a gas injection
+      system. The voltage potential between the central cathode wire cage and the chamber anode (-4kV in my case),
+      ionizes
+      the gas and accelerates it inward, where it heats up and eventually collides in the center, forming a plasma.
+      Currently I have created plasma with the tiny amount of remaining air after a vacuum pump down, and regular
+      hydrogen, synthesized by combining Aluminum foil and 0.1 M Sodium Hydroxide. See images of ambient air nitrogen
+      plasma and general setup below. The plasma in the pictures was created at ~2.1kv and ~50 microns. Operation video
+      shown
+      <a href="https://drive.google.com/file/d/1Yta61JYQPxuIaMlZLbIGK9HwFhgoxrvR/view">here</a>.
+    </p>
+    <img src="plasmageneratortru_files/image004.jpg" width=519 height=692 />
+
+    <h2>Vacuum System</h2>
+    <p>
+      The vacuum system for the plasma generator is a Welch 8920A oil sealed rotary vane pump. I fully disassembled and
+      refurbished it over the course of 6 months after getting it off ebay in terrible condition ( It was bad because I
+      bought it for 200$ and they are usually sold for over $3000). This pump was connected to the chamber with a few
+      feet
+      3/4in ID PVC tubing using metal compression sleeves. (The gas ballast stays closed during operation). The chamber
+      pressure is measured with a VG64 digital vacuum gauge that is connected to the chamber by a series of flange
+      adapters sealed with epoxy. The guageï¿½s 0.5 micron resolution gives me a really good picture of the true
+      pressure
+      conditions. See internal mechanics, homemade part replacements, and before and after pics below
+    </p>
+
+    <div class="row justify-content-center">
+      <img src="plasmageneratortru_files/image006.jpg" />
+      <img src="plasmageneratortru_files/image008.jpg" />
+      <img src="plasmageneratortru_files/image010.jpg" />
+      <img src="plasmageneratortru_files/image012.jpg" />
+      <img src="plasmageneratortru_files/image014.jpg" />
+    </div>
+    <div class="row justify-content-center">
+      <img src="plasmageneratortru_files/image016.jpg" />
+      <img src="plasmageneratortru_files/image018.jpg" />
+      <img src="plasmageneratortru_files/image020.jpg" />
+      <img src="plasmageneratortru_files/image022.jpg" />
+      <img src="plasmageneratortru_files/image024.jpg" />
+    </div>
+
+
+    <h2>Cage and HV vacuum feedthrough</h2>
+    <p>
+      I made my own HV feedthrough that feeds the cathode into the chamber without shorting it to the chamber or causing
+      leaks. I did this by drilling a 1ï¿½ hole in an old grinding wheel from a scrap dump, placing the stainless steel
+      cage I built inside of it, sealing the bottom, and pouring in marine epoxy to fill the hole. The epoxy binds to
+      the
+      edges of everything it touches forming a seal, and its dielectric properties prevent a short. In a more recent
+      generation I used Sodium Silicate instead of epoxy because it's a better dielectric, completely heat resistant
+      (the
+      cage gets really hot from the plasma), and off-gasses less, helping me reach a higher vacuum. The most up to date
+      iteration is liquid-cooled, allowing for my demo fusor to operate for hours at a time
+    </p>
+    <div class="row justify-content-center">
+      <img src="plasmageneratortru_files/image026.jpg" />
+      <img src="plasmageneratortru_files/image028.jpg" />
+      <img src="plasmageneratortru_files/image030.jpg" />
+    </div>
+
+
+    <h3>Sodium Silicate(Left) & Liquid-Cooled(Right) Feedthroughs</h3>
+    <div class="row justify-content-center">
+      <img src="plasmageneratortru_files/image032.jpg" />
+      <img src="plasmageneratortru_files/image034.jpg" />
+    </div>
+
+    <h2>Chamber (Generation 2)</h2>
+    <p>
+      The front window is 1ï¿½ by 7ï¿½ by 7ï¿½ acrylic from a plastics store. The custom bolts I made compress the
+      flange-feedthrough and the window onto the gaskets on both sides of the chamber, forming a seal. The gaskets are
+      made from EDPM synthetic rubber. I cut them out of a large sheet with scissors. The chamber is made of 5 inch ID
+      stainless steel tubing with 3 outlets of 3/4in OD stainless tubing welded on. Credit to Calvin Holmes for the
+      welding. The small hairline fractures in the welds were sealed with Sodium Silicate. The third outlet is sealed
+      off
+      in the plasma images but is used for gas injection.
+    </p>
+    <div class="row justify-content-center">
+      <img src="plasmageneratortru_files/image036.jpg" />
+      <img src="plasmageneratortru_files/image038.jpg" />
+      <img src="plasmageneratortru_files/image040.png" />
+    </div>
+
+    <h2>Chamber (Generation 1)</h2>
+    <p>
+      The first generation chamber was different in that it had a far more archaic method for flange-gasket compression.
+      I
+      connected 4 aluminum bars to 4 sets of standoffs, forming crude brackets that I slid on the chamber and cinched
+      down. There were a number of issues with this setup that led me to make the improvements seen in generation 2
+      above.
+      The first was ease of use. The brackets were extremely tedious to get on and off, meaning it was very hard to
+      switch
+      between the multiple feedthrough flanges I had made. The second, more important issue, was uniform gasket
+      compression and leak detection. The brackets were hard to keep in one place on the faces of the chamber, meaning
+      that it was almost impossible to compress the gasket perfectly. This made leak detection a major issue because you
+      never knew whether the cause of the leak was bracket alignment or an actual connection. This was resolved in the
+      2nd
+      generation by replacing the feedthrough flanges with larger square plates that could accept 4 fixed bolts.
+    </p>
+    <div class="row justify-content-center">
+      <img src="plasmageneratortru_files/image042.png" />
+      <img src="plasmageneratortru_files/image044.png" />
+      <img src="plasmageneratortru_files/image046.png" />
+    </div>
+
+    <h2>2.1kv DC @200 mA power supply</h2>
+    <p>
+      This HV system consists of a variable water resistor (for current control), A variac, and then a center tapped 2.1
+      kv MOT feeding into a full bridge rectifier made from microwave oven diodes. Finally, two 1 uF microwave
+      capacitors
+      in parallel smooth the still fluctuating rectified DC to create a more ï¿½trueï¿½ DC waveform. This provides the
+      negative polarity 2.1kvdc needed for the plasma.
+    </p>
+    <div class="row justify-content-center">
+      <img src="plasmageneratortru_files/image047.jpg" />
+      <img src="plasmageneratortru_files/image049.jpg" />
+      <img src="plasmageneratortru_files/image051.jpg" />
+      <img src="plasmageneratortru_files/image053.jpg" />
+    </div>
+  </main>
+</body>
+
+</html>
