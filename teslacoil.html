@@ -3,19 +3,16 @@
 <head>
   <title>Dominick Q</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="styles.css">
   <style media="screen">
+
+  @media only screen and (max-width: 720px) {
     img {
-      max-width: 40%;
-      max-height: 320px;
+      width: 100%;
     }
-    @media only screen and (max-width: 720px) {
-      img {
-        width: 100%;
-      }
-    }
+  }
   </style>
 </head>
 
@@ -29,153 +26,372 @@
       during operation.
     </p>
     <div class="row justify-content-center">
-      <img height="500" src="teslacoil_files/image002.jpg" />
+      <figure class=" figure my-auto col-md-4">
+        <img src="teslacoil_files/image002.jpg" />
+        <figcaption class="figure-caption"></figcaption>
+      </figure>
       <video width="auto" height="500px" controls>
         <source src="teslacoil_files/demo.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-      </video>
-      <img style="height: 500px" src="teslacoil_files/image004.jpg" />
-    </div>
+          Your browser does not support the video tag.
+        </video>
+        <figure class=" figure my-auto col-md-4">
+          <img style="height: 500px" src="teslacoil_files/image004.jpg" />
+          <figcaption class="figure-caption"></figcaption>
+        </figure>
+      </div>
 
-    <h2>Transformer</h2>
-    <p>
-The "coil" of a Tesla Coil is actually an air cored transformer consisting of a primary and a secondary that extends vertically above it. Our secondary consists of approximately 1,500 turns of 24awg enameled copper wire wrapped around a 3 foot section of scrap PVC we repurposed. The outside was wrapped in Kapton tape and coated in lacquer to insulate it from the rest of the system. The primary consists of 10 turns of copper refrigeration tubing held in place by custom wooden shunts. Tesla coils have an ideal ratio of inductance to capacitance, so we left the primary uninsulated to allow us to alligator clip the power supply to different sections of the primary, which allows us to tune the inductance. The air gap was also made variable by making the stand have an adjustable height for the secondary (see stand section for explanation). This is crucial as well because the transformer also has an ideal gap between the primary and the secondary for efficient operation.
-    </p>
-    <div class="row justify-content-center">
-      <img height="354" src="teslacoil_files/image006.jpg" width="266" />
-      <img height="414" src="teslacoil_files/image008.jpg" width="311" />
-    </div>
+      <h2>Transformer</h2>
+      <p>
+        The "coil" of a Tesla Coil is actually an air cored transformer consisting of a primary and a secondary that extends vertically above it. Our secondary consists of approximately 1,500 turns of 24awg enameled copper wire wrapped around a 3 foot section of scrap PVC we repurposed. The outside was wrapped in Kapton tape and coated in lacquer to insulate it from the rest of the system. The primary consists of 10 turns of copper refrigeration tubing held in place by custom wooden shunts. Tesla coils have an ideal ratio of inductance to capacitance, so we left the primary uninsulated to allow us to alligator clip the power supply to different sections of the primary, which allows us to tune the inductance. The air gap was also made variable by making the stand have an adjustable height for the secondary (see stand section for explanation). This is crucial as well because the transformer also has an ideal gap between the primary and the secondary for efficient operation.
+      </p>
+      <div class="row justify-content-center">
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image006.jpg" />
+          <figcaption class="figure-caption">As you can see there are not 10 turns in this picture (we added them later)</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image008.jpg" />
+          <figcaption class="figure-caption"></figcaption>
+        </figure>
+      </div>
 
-    <h2>Toroid</h2>
-    <p>
-      The Torid seen below is one of the defining features of the Tesla coil. Its only function is to decrease Corona discharge. Corona discharge is when air becomes ionized by high voltage, creating a faint plasma. This plasma creates a path for allow small amounts of current to flow through, causing what I would call a "pseudo short"(also known as corona loss). In the case of the Tesla coil this isn't a concern, but the ozone created in the process is. Ozone can be harmful to your lungs, among many other things. By reducing the ozone the Tesla coil becomes much more safe to be around.
-    </p>
-    <p>
-      The Toroid was made using a section of used aluminum air conditioning ducting. I cut both ends flush, twisted the straight section into a circle and then attached the two ends with silicone glue. I then cut a piece of plywood to match the diameter of the toroid and added a hole in the center so it would fit over the section of PVC above the primary. I then coated the piece with mineral oil to reduce its conductivity and attached a small plywood plate with 3/4" spacers to ensure it wouldn't slide all the way down the primary. I then glued on the Toroid onto the plywood section. For our recent VTTC upgrade I built a copper breakout point for the arcs to originate from. I began by cutting an 8" section of solid copper wire. I then used a file and grinding wheel to sharpen the tip and sanded the rest for appearences. Next I inserted it into a cheap aluminum lug which I attached to a L-shaped copper plate. I made the plate by crushing some scrap copper tubing in my Vice. Finally I drilled two screw holes in the plate and attached the breakout point to the Toroid.
-    </p>
-    <div class="row justify-content-center">
-      <img height="369" src="teslacoil_files/image010.jpg" width="277" />
-      <img height="365" src="teslacoil_files/image012.jpg" width="275" />
-      <img height="356" src="teslacoil_files/image014.jpg" width="267" />
-      <img height="354" src="teslacoil_files/image016.jpg" width="266" />
-      <img height="391" src="teslacoil_files/image018.jpg" width="294" />
-      <img height="361" src="teslacoil_files/image020.jpg" width="270" />
-      <img height="377" src="teslacoil_files/image022.jpg" width="281" />
-      <img height="391" src="teslacoil_files/image024.jpg" width="294" />
-      <img height="332" src="teslacoil_files/image026.jpg" width="249" />
-      <img height="356" src="teslacoil_files/image028.jpg" width="267" />
+      <h2>Toroid</h2>
+      <p>
+        The Torid seen below is one of the defining features of the Tesla coil. Its only function is to decrease Corona discharge. Corona discharge is when air becomes ionized by high voltage, creating a faint plasma. This plasma creates a path for allow small amounts of current to flow through, causing what I would call a "pseudo short"(also known as corona loss). In the case of the Tesla coil this isn't a concern, but the ozone created in the process is. Ozone can be harmful to your lungs, among many other things. By reducing the ozone the Tesla coil becomes much more safe to be around.
+      </p>
+      <p>
+        The Toroid was made using a section of used aluminum air conditioning ducting. I cut both ends flush, twisted the straight section into a circle and then attached the two ends with silicone glue. I then cut a piece of plywood to match the diameter of the toroid and added a hole in the center so it would fit over the section of PVC above the primary. I then coated the piece with mineral oil to reduce its conductivity and attached a small plywood plate with 3/4" spacers to ensure it wouldn't slide all the way down the primary. I then glued on the Toroid onto the plywood section. For our recent VTTC upgrade I built a copper breakout point for the arcs to originate from. I began by cutting an 8" section of solid copper wire. I then used a file and grinding wheel to sharpen the tip and sanded the rest for appearences. Next I inserted it into a cheap aluminum lug which I attached to a L-shaped copper plate. I made the plate by crushing some scrap copper tubing in my Vice. Finally I drilled two screw holes in the plate and attached the breakout point to the Toroid.
+      </p>
+      <div class="row justify-content-center">
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image010.jpg" />
+          <figcaption class="figure-caption">Original air conditioning tubing</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image012.jpg" />
+          <figcaption class="figure-caption">Joining into toroid</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image014.jpg" />
+          <figcaption class="figure-caption">Jigsawing out the plywood attachment plate</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image016.jpg" />
+          <figcaption class="figure-caption">center hole cut out</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image018.jpg" />
+          <figcaption class="figure-caption">Attaching plate to keep from sliding down secondary</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image020.jpg" />
+          <figcaption class="figure-caption"></figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image022.jpg" />
+          <figcaption class="figure-caption"></figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image024.jpg" />
+          <figcaption class="figure-caption">Finished product</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image026.jpg" />
+          <figcaption class="figure-caption"></figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image028.jpg" />
+          <figcaption class="figure-caption"></figcaption>
+        </figure>
 
-    <img src="teslacoil_files/IMG_0980.JPEG" />
-    <img src="teslacoil_files/IMG_0982.JPEG" />
-    <img src="teslacoil_files/IMG_0984.JPEG" />
-    <img src="teslacoil_files/IMG_0985.JPEG" />
-    <img src="teslacoil_files/IMG_0991.JPEG" />
-    <img src="teslacoil_files/IMG_1001.JPEG" />
-    </div>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/IMG_0980.JPEG" />
+          <figcaption class="figure-caption">Cutting to length with hacksaw</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/IMG_0982.JPEG" />
+          <figcaption class="figure-caption"></figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/IMG_0984.JPEG" />
+          <figcaption class="figure-caption">Polished and sharpened point</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/IMG_0985.JPEG" />
+          <figcaption class="figure-caption">Attaching lug</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/IMG_0991.JPEG" />
+          <figcaption class="figure-caption">Flattened tubing bent to 90 degrees to hold rod upright</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/IMG_1001.JPEG" />
+          <figcaption class="figure-caption">Final toroid setup with breakout</figcaption>
+        </figure>
+      </div>
 
-    <h2>Stand</h2>
-    <p>
-      Stand:
-  The stand was made with only Plywood, 2x2, and some small 5" bolts. I cut 2 identical baseplates, cut holes in the center to fit the PVC, attached 2x2 on the corners to space them, and then bolted them together. The spacing provides 2 points of contact to the PVC, thus securing it laterally. I made a much smaller plywood plate to secure the PVC vertically. This plate was attached using 4 bolts with the nuts on the bottom, providing an easy way to raise or lower the secondary. All components were coated with mineral oil to reduce conductivity. I bent some leftover strips of copper to form the strike rail, which is placed above the primary and attached directly to ground. The strike rail is meant to prevent any arcs from the secondary hitting the primary, which would result in more than a million volts running back through the system and destroying it. With the strike rail present, the arcs will just hit the rail and go to ground instead, causing no damage.
-    </p>
-    <div class="row justify-content-center">
-      <img height="160" src="teslacoil_files/image030.jpg" width="213" />
-      <img height="278" src="teslacoil_files/image032.jpg" width="208" />
-      <img height="240" src="teslacoil_files/image034.jpg" width="319" />
-      <img height="272" src="teslacoil_files/image036.jpg" width="362" />
-      <img height="270" src="teslacoil_files/image038.jpg" width="361" />
-      <img height="303" src="teslacoil_files/image040.jpg" width="227" />
-      <img height="310" src="teslacoil_files/image042.jpg" width="232" />
-    </div>
+      <h2>Stand</h2>
+      <p>
+        Stand:
+        The stand was made with only Plywood, 2x2, and some small 5" bolts. I cut 2 identical baseplates, cut holes in the center to fit the PVC, attached 2x2 on the corners to space them, and then bolted them together. The spacing provides 2 points of contact to the PVC, thus securing it laterally. I made a much smaller plywood plate to secure the PVC vertically. This plate was attached using 4 bolts with the nuts on the bottom, providing an easy way to raise or lower the secondary. All components were coated with mineral oil to reduce conductivity. I bent some leftover strips of copper to form the strike rail, which is placed above the primary and attached directly to ground. The strike rail is meant to prevent any arcs from the secondary hitting the primary, which would result in more than a million volts running back through the system and destroying it. With the strike rail present, the arcs will just hit the rail and go to ground instead, causing no damage.
+      </p>
+      <div class="row justify-content-center">
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image030.jpg" />
+          <figcaption class="figure-caption">Prepped parts</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image032.jpg" />
+          <figcaption class="figure-caption">Bottom of the stand</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image034.jpg" />
+          <figcaption class="figure-caption">Another view</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image036.jpg" />
+          <figcaption class="figure-caption">Strike rail</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image038.jpg" />
+          <figcaption class="figure-caption">Mineral oil treatment</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image040.jpg" />
+          <figcaption class="figure-caption">Dilled bolthole attachments for strike rail</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image042.jpg" />
+          <figcaption class="figure-caption">Strike rail before being attached</figcaption>
+        </figure>
+      </div>
 
-    <h2>Capacitors</h2>
-    <p>
-    Our Tesla coil uses 2 different capacitor banks in series, but I will be mainly talking about the bank I made as the others were bought by my friend and simply added together to achieve the desired capacitance. The bank I made consisted of 20 leyden jars. Leyden jars are a form of capacitor that uses a glass bottle as the central dielectric, and a conductive fluid inside it as one of the electrodes. The bottle is then coated in foil which forms the second electrode. I began by collecting bottles my family used and boiling them in a large pot to make the labels removable. I then used acetone to remove all remaining residue. This was done because any remaining coating would reduce the area of contact between the foil and the glass, thus reducing the capacitance, and promoting arcovers. I then baked the bottles to remove any remaining moisture and contaminants. I cut aluminum foil into pre-measured sections that perfectly fit the diameter of the bottle, and then rolled and glued them on, making sure to apply significant pressure to create greater contact. I then drilled holes in the caps of the bottles so I could feed through the bolts that contact the electrolyte. It is typical for these capacitors to be called "Saltwater capacitors'' because almost everyone uses saltwater as their electrolyte. Instead I decided to use water mixed with a very small amount of sodium hydroxide as our electrolyte. I did this because low concentration sodium hydroxide is far more conductive than salt water, resulting in lower losses within the capacitor bank. I put The individual capacitors in a cardboard box to create a uniform spacing between them, and we added aluminum bars in-between the foil-coated coutsides. The compression from the capacitors placement in the box resulted in good contact, thus connecting all of the outer electrodes together. The (anodes) were connected together using machined copper strips. I made the strips by sawing out a thin section from copper scrap, sanding them smooth, and then matching drilling holes for the tops of the bolt electrodes. The bolts were then inserted through, and nuts were added and tightened down.I then used low gauge microwave wire as jumper cables between the 4 rows, forming the final product. The thick walls of the glass bottles provide an estimated voltage rating of 50kV, and a capacitance of 20nF for the whole bank, or 1nF per capacitor. Ive included 3 pictures of another leyden jar bank I made recently (hasnt been used yet) to show the prosses of how I did the bakeing and foil application on the bottles.
-    </p>
-    <div class="row justify-content-center">
-      <img height="221" src="teslacoil_files/IMG_2115.JPG" width="295" />
-      <img height="297" src="teslacoil_files/IMG_2123.JPG" width="238" />
-      <img height="221" src="teslacoil_files/IMG_2124.JPG" width="295" />
-      <img height="221" src="teslacoil_files/IMG_2113.JPG" width="295" />
-      <img height="301" src="teslacoil_files/image044.jpg" width="226" />
-      <img height="297" src="teslacoil_files/image046.jpg" width="238" />
-      <img height="254" src="teslacoil_files/image048.jpg" width="190" />
-      <img height="254" src="teslacoil_files/image050.jpg" width="190" />
-      <img height="256" src="teslacoil_files/image052.jpg" width="192" />
-      <img height="252" src="teslacoil_files/image054.jpg" width="189" />
-      <img height="270" src="teslacoil_files/image056.jpg" width="204" />
-      <img height="258" src="teslacoil_files/image058.jpg" width="194" />
-      <img height="221" src="teslacoil_files/image060.jpg" width="295" />
-      <img height="268" src="teslacoil_files/image062.jpg" width="202" />
-    </div>
+      <h2>Capacitors</h2>
+      <p>
+        Our Tesla coil uses 2 different capacitor banks in series, but I will be mainly talking about the bank I made as the others were bought by my friend and simply added together to achieve the desired capacitance. The bank I made consisted of 20 leyden jars. Leyden jars are a form of capacitor that uses a glass bottle as the central dielectric, and a conductive fluid inside it as one of the electrodes. The bottle is then coated in foil which forms the second electrode. I began by collecting bottles my family used and boiling them in a large pot to make the labels removable. I then used acetone to remove all remaining residue. This was done because any remaining coating would reduce the area of contact between the foil and the glass, thus reducing the capacitance, and promoting arcovers. I then baked the bottles to remove any remaining moisture and contaminants. I cut aluminum foil into pre-measured sections that perfectly fit the diameter of the bottle, and then rolled and glued them on, making sure to apply significant pressure to create greater contact. I then drilled holes in the caps of the bottles so I could feed through the bolts that contact the electrolyte. It is typical for these capacitors to be called "Saltwater capacitors'' because almost everyone uses saltwater as their electrolyte. Instead I decided to use water mixed with a very small amount of sodium hydroxide as our electrolyte. I did this because low concentration sodium hydroxide is far more conductive than salt water, resulting in lower losses within the capacitor bank. I put The individual capacitors in a cardboard box to create a uniform spacing between them, and we added aluminum bars in-between the foil-coated coutsides. The compression from the capacitors placement in the box resulted in good contact, thus connecting all of the outer electrodes together. The (anodes) were connected together using machined copper strips. I made the strips by sawing out a thin section from copper scrap, sanding them smooth, and then matching drilling holes for the tops of the bolt electrodes. The bolts were then inserted through, and nuts were added and tightened down.I then used low gauge microwave wire as jumper cables between the 4 rows, forming the final product. The thick walls of the glass bottles provide an estimated voltage rating of 50kV, and a capacitance of 20nF for the whole bank, or 1nF per capacitor. Ive included 3 pictures of another leyden jar bank I made recently (hasnt been used yet) to show the prosses of how I did the bakeing and foil application on the bottles.
+      </p>
+      <div class="row justify-content-center">
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/IMG_2115.JPG" />
+          <figcaption class="figure-caption">Baking to remove water and other contaminants(shows prosses for orginal bank I forgot to photograph)</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/IMG_2123.JPG" />
+          <figcaption class="figure-caption">Precut aluminum foil electrode(shows prosses for orginal bank I forgot to photograph)</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/IMG_2124.JPG" />
+          <figcaption class="figure-caption">Final attachment(shows prosses for orginal bank I forgot to photograph)</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/IMG_2113.JPG" />
+          <figcaption class="figure-caption">Caps and bolt electodes before attachment</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image044.jpg" />
+          <figcaption class="figure-caption">Individual capacitor</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image046.jpg" />
+          <figcaption class="figure-caption"></figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image048.jpg" />
+          <figcaption class="figure-caption">Cutting electrode row attachment</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image050.jpg" />
+          <figcaption class="figure-caption">Cleaning and polishing for better connection</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image052.jpg" />
+          <figcaption class="figure-caption">Drilled boltholes</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image054.jpg" />
+          <figcaption class="figure-caption"></figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image056.jpg" />
+          <figcaption class="figure-caption"></figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image058.jpg" />
+          <figcaption class="figure-caption">If you look closely you can see the aluminum bars between the foil outsides of the bottles. These connect the other electrodes.</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image060.jpg" />
+          <figcaption class="figure-caption">The pump shaft block before cleaning.</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image062.jpg" />
+          <figcaption class="figure-caption">Bank while in operation in parralel with some commercial doorknob capacitors.</figcaption>
+        </figure>
+      </div>
 
-    <h2>Spark Gap</h2>
-    <p>
-      The spark gap works as a switching mechanism between the capacitor bank and the primary. When there is no active arc in the gap, the capacitor simply charges. But when the capacitor charges enough to spark across the gap, it becomes shorted to the primary, creating a short lived high frequency oscillation which drives the transformer. This oscillation ends when the capacitor can no longer sustain the arc in the gap, and then the capacitor recharges, thus repeating the cycle. This switching task can also be effectively performed by other more efficient devices such as a vacuum tube(arcs through air are not the most efficient). We are currently updating our circuit to use a vacuum tube instead of a spark gap, which will hopefully provide a slightly more powerful output, as well as some interesting arc shapes that are unique to vacuum tube tesla coils.
-    </p>
-    <p>
-      I began by cutting a small plywood  stand and adding 2 sections of 2x4 to elevate the angle grinder. I secured the grinder using two 6" U-bolts and my own custom attachment bars made from random scrap metal. The electrode wheel was cut out of a piece of plexiglass from a broken window. I precision drilled a hole in the center so it could properly mount on the grinder (if the hole was off it would vibrate so violently it would rip itself apart). I drilled 2 smaller holes on opposite ends of the wheel and added two small bolts with loctite to prevent them from dethreading at the thousands of RPM they are subjected to. These serve as the bridging electrodes between the gap. Finally I mounted two sections of paired aluminum C-Channel on both sides of the wheel to serve as mounting points for the 2 other electrodes that form the "gap". These gap electrodes were just fine-threaded bolts that I inserted through the C-Channels and secured with 2 counter-threaded nuts. The fine threads allow one to tune the position of the electrodes easily, making it far easier to reach the smallest gap distance possible (accounting for wobble in the grinding wheel rotor). I connected leftover low gauge copper wire from my microwave disassembly to the backs of both electrodes, thus finishing the rotary spark gap.
-    </p>
-    <div class="row justify-content-center">
-      <img height="307" src="teslacoil_files/image064.jpg" width="230" />
-      <img height="230" src="teslacoil_files/image066.jpg" width="307" />
-      <img height="242" src="teslacoil_files/image068.jpg" width="182" />
-      <img height="210" src="teslacoil_files/image070.jpg" width="281" />
-      <img height="264" src="teslacoil_files/image072.jpg" width="198" />
-      <img height="163" src="teslacoil_files/image074.jpg" width="217" />
-      <img height="202" src="teslacoil_files/image076.jpg" width="270" />
-      <img height="274" src="teslacoil_files/image078.jpg" width="206" />
-      <img height="234" src="teslacoil_files/image080.jpg" width="175" />
-      <img height="220" src="teslacoil_files/image082.jpg" width="293" />
-      <img height="182" src="teslacoil_files/image084.jpg" width="242" />
-      <img height="194" src="teslacoil_files/image086.jpg" width="258" />
-      <img height="174" src="teslacoil_files/image088.jpg" width="231" />
-    </div>
+      <h2>Spark Gap</h2>
+      <p>
+        The spark gap works as a switching mechanism between the capacitor bank and the primary. When there is no active arc in the gap, the capacitor simply charges. But when the capacitor charges enough to spark across the gap, it becomes shorted to the primary, creating a short lived high frequency oscillation which drives the transformer. This oscillation ends when the capacitor can no longer sustain the arc in the gap, and then the capacitor recharges, thus repeating the cycle. This switching task can also be effectively performed by other more efficient devices such as a vacuum tube(arcs through air are not the most efficient). We are currently updating our circuit to use a vacuum tube instead of a spark gap, which will hopefully provide a slightly more powerful output, as well as some interesting arc shapes that are unique to vacuum tube tesla coils.
+      </p>
+      <p>
+        I began by cutting a small plywood stand and adding 2 sections of 2x4 to elevate the angle grinder. I secured the grinder using two 6" U-bolts and my own custom attachment bars made from random scrap metal. The electrode wheel was cut out of a piece of plexiglass from a broken window. I precision drilled a hole in the center so it could properly mount on the grinder (if the hole was off it would vibrate so violently it would rip itself apart). I drilled 2 smaller holes on opposite ends of the wheel and added two small bolts with loctite to prevent them from dethreading at the thousands of RPM they are subjected to. These serve as the bridging electrodes between the gap. Finally I mounted two sections of paired aluminum C-Channel on both sides of the wheel to serve as mounting points for the 2 other electrodes that form the "gap". These gap electrodes were just fine-threaded bolts that I inserted through the C-Channels and secured with 2 counter-threaded nuts. The fine threads allow one to tune the position of the electrodes easily, making it far easier to reach the smallest gap distance possible (accounting for wobble in the grinding wheel rotor). I connected leftover low gauge copper wire from my microwave disassembly to the backs of both electrodes, thus finishing the rotary spark gap.
+      </p>
+      <div class="row justify-content-center">
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image064.jpg" />
+          <figcaption class="figure-caption">2x4 sut to elevate the angle grinder</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image066.jpg" />
+          <figcaption class="figure-caption"></figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image068.jpg" />
+          <figcaption class="figure-caption">Cutting polycarb wheel</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image070.jpg" />
+          <figcaption class="figure-caption">Attaching bolts with locktite to prevent them from falling out from the vibrations</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image072.jpg" />
+          <figcaption class="figure-caption"></figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image074.jpg" />
+          <figcaption class="figure-caption">I cut these sheet metal holding strips from the outside of a microwave and drilled holes for screws</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image076.jpg" />
+          <figcaption class="figure-caption"></figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image078.jpg" />
+          <figcaption class="figure-caption">Electode holders</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image080.jpg" />
+          <figcaption class="figure-caption">Clearance close-up. The goal is to make the gap as small as possible without risking the angle grinder wheel hitting. The lower distance the arc has to travel, the more effieint the gap is. </figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image082.jpg" />
+          <figcaption class="figure-caption"></figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image084.jpg" />
+          <figcaption class="figure-caption"></figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image086.jpg" />
+          <figcaption class="figure-caption"></figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image088.jpg" />
+          <figcaption class="figure-caption"></figcaption>
+        </figure>
+      </div>
 
-    <div class="row justify-content-center">
-      <video width="auto" height="500px" controls src="teslacoil_files/rotary-spark-gap.MOV" >
-      </video>
-    </div>
+      <div class="row justify-content-center">
+        <video width="auto" height="500px" controls src="teslacoil_files/rotary-spark-gap.MOV" >
+        </video>
+      </div>
 
 
-    <h2>Power supply</h2>
-    <p>
-      This power supply was made using four 1.2KW Microwave oven transformers. The transformers were taken from broken microwaves I collected over the course of the year. So far I've disassembled over 35 Microwaves, which allowed me to find 4 transformers with almost identical size and ratings. All of them are 120VAC input, 2100VAC output, with turn ratios of 17.5:1. By choosing identical transformers the efficiency of the power supply is maximized, as there is almost no discrepancy in terms of inductance, current, voltage, ext. The supply has a 8.4kV output. This is achieved by running two of the transformers hot-cored at 4200 Volts and 2 neutral at 2100 Volts (see wiring diagram below). As a result 8.4kV is achieved between the two hot-cored 4200V outputs. Unfortunately this supply alone pulls so much current that it will almost instantly blow any typical 15 amp breaker. Because of this it requires a ballast on its input to limit its current.
-    </p>
-    <div class="row justify-content-center">
-      <img height="190" src="teslacoil_files/image090.jpg" width="142" />
-      <img height="190" src="teslacoil_files/image092.jpg" width="190" />
-      <img height="184" src="teslacoil_files/image094.jpg" width="184" />
-      <img height="158" src="teslacoil_files/image096.jpg" width="158" />
-      <img height="160" src="teslacoil_files/image098.jpg" width="120" />
-      <img height="186" src="teslacoil_files/image100.png" width="238" />
-      <img height="210" src="teslacoil_files/image102.jpg" width="281" />
-      <img height="178" src="teslacoil_files/image104.jpg" width="238" />
-      <img height="212" src="teslacoil_files/image106.jpg" width="282" />
-      <img height="213" src="teslacoil_files/image108.jpg" width="160" />
-      <img height="144" src="teslacoil_files/image110.png" width="193" />
-      <img height="144" src="teslacoil_files/image112.jpg" width="193" />
-      <img height="143" src="teslacoil_files/image114.jpg" width="190" />
-      <img height="266" src="teslacoil_files/image116.jpg" width="355" />
-      <img height="229" src="teslacoil_files/image118.png" width="381" />
-    </div>
+      <h2>Power supply</h2>
+      <p>
+        This power supply was made using four 1.2KW Microwave oven transformers. The transformers were taken from broken microwaves I collected over the course of the year. So far I've disassembled over 35 Microwaves, which allowed me to find 4 transformers with almost identical size and ratings. All of them are 120VAC input, 2100VAC output, with turn ratios of 17.5:1. By choosing identical transformers the efficiency of the power supply is maximized, as there is almost no discrepancy in terms of inductance, current, voltage, ext. The supply has a 8.4kV output. This is achieved by running two of the transformers hot-cored at 4200 Volts and 2 neutral at 2100 Volts (see wiring diagram below). As a result 8.4kV is achieved between the two hot-cored 4200V outputs. Unfortunately this supply alone pulls so much current that it will almost instantly blow any typical 15 amp breaker. Because of this it requires a ballast on its input to limit its current.
+      </p>
+      <div class="row justify-content-center">
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image090.jpg" />
+          <figcaption class="figure-caption">I tried to choose 4 near identical microwave transformers</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image092.jpg" />
+          <figcaption class="figure-caption">12v magnetron heater wires are usless here so I cut them</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image094.jpg" />
+          <figcaption class="figure-caption">Byeee sis🙄</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image096.jpg" />
+          <figcaption class="figure-caption">Desoldering the secondary from the core</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image098.jpg" />
+          <figcaption class="figure-caption">Bending plastic guard</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image100.png" />
+          <figcaption class="figure-caption">Plastic guard makes sure that secondary is 100% isolated and doesnt touch the core.</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image102.jpg" />
+          <figcaption class="figure-caption">Attaching the secondary's of the outer trasfomers to the inner ones.</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image104.jpg" />
+          <figcaption class="figure-caption"></figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image106.jpg" />
+          <figcaption class="figure-caption">Beginning to hook up mains wires to transformers(mid build)</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image108.jpg" />
+          <figcaption class="figure-caption">I saved this pile of wires from all my microwave dissasemblies and used them for this. Many of the wires already had connectors that mached making this easy and eco-frindly</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image110.png" />
+          <figcaption class="figure-caption">End of build picture</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image112.jpg" />
+          <figcaption class="figure-caption">Left transformer pair close up</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image114.jpg" />
+          <figcaption class="figure-caption">Right transformer pair close up</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image116.jpg" />
+          <figcaption class="figure-caption">fully hooked up with balast</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image118.png" />
+          <figcaption class="figure-caption">Wiring diagram</figcaption>
+        </figure>
+      </div>
 
-    <h2>Ballast</h2>
-    <p>
-      This inductive ballast was made using another much larger Microwave transformer taken from a 1980's vintage
-      microwave. We chose to use this transformer purely due to it's simplicity, because if we used smaller transformers from
-      more modern microwaves, we would have needed to use more than one. All I did was desolder one end of the secondary
-      from core and short it to the other end. I then screwed it onto a small piece of plywood for stability. We then
-      attached one end of the primary to the 120V input and the other to the power supply. With this setup the current
-      must flow through the ballast before it enters the power supply.
-    </p>
-    <div class="row justify-content-center">
-      <img height="226" src="teslacoil_files/image120.jpg" width="301" />
-      <img height="226" src="teslacoil_files/image122.jpg" width="303" />
-      <img height="218" src="teslacoil_files/image124.jpg" width="291" />
-      <img height="219" src="teslacoil_files/image126.jpg" width="292" />
-    </div>
-  </main>
-</body>
+      <h2>Ballast</h2>
+      <p>
+        This inductive ballast was made using another much larger Microwave transformer taken from a 1980's vintage
+        microwave. We chose to use this transformer purely due to it's simplicity, because if we used smaller transformers from
+        more modern microwaves, we would have needed to use more than one. All I did was desolder one end of the secondary
+        from core and short it to the other end. I then screwed it onto a small piece of plywood for stability. We then
+        attached one end of the primary to the 120V input and the other to the power supply. With this setup the current
+        must flow through the ballast before it enters the power supply.
+      </p>
+      <div class="row justify-content-center">
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image120.jpg" />
+          <figcaption class="figure-caption">Desoldering one side of secodary</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image122.jpg" />
+          <figcaption class="figure-caption">detached</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image124.jpg" />
+          <figcaption class="figure-caption">Attaching it to the oter side to short</figcaption>
+        </figure>
+        <figure class=" figure my-auto col-md-4">
+          <img src="teslacoil_files/image126.jpg" />
+          <figcaption class="figure-caption">Ballast in use</figcaption>
+        </figure>
+      </div>
+    </main>
+  </body>
 
-</html>
+  </html>

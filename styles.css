@@ -5,9 +5,23 @@ h5 {
   text-decoration: underline;
 }
 
+h2 {
+  margin-bottom: 16px;
+}
+
 body {
   font-size: 140%;
 }
+
+figure > img {
+  margin: 0;
+  width: 100%
+}
+
+figure > figcaption {
+  font-size: 80%;
+}
+
 
 h1,
 h2,
