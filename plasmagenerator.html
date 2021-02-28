@@ -214,8 +214,62 @@
       </figure>
       <figure class="figure my-auto col-md-4">
         <img src="plasmageneratortru_files/IMG_0597.png" />
-        <figcaption class="figure-caption">20Kv multiplier. See electronics section for more.</figcaption>
+        <figcaption class="figure-caption">20kV multiplier. See electronics section for more.</figcaption>
       </figure>
+        </div>
+
+      <h2>Gas injection system</h2>
+      <p>
+        I am currently working on a gas injection system for my fusor. The idea is to inject small amounts of liquid though a needle onto a reactive substance in a small glass container that produces the gas a I want. The gas then is let into the fusor chamber though a valve.
+        I have already done this with a far less advanced setup using sodium hydroxide and aluminum: 2Al + 2NaOH + 2H2O → 2NaAlO2 + 3H2. The resulting "2NaAlO2", or sodium aluminate just stays solid in the reaction chamber and dose not interfere, and only the hydrogen gas I want flows out into
+        the chamber. With my new setup I hope to react Deuterium oxide (heavy water) with Calcium: 2D20 + Ca → Ca(OD)2 + D2. As you can see here I get the pure deuterium gas I want while the oxgen and Ca remain bound as a solid. I am still collecting parts for this system but one thing I have
+        done so far is create a automatic ball valve opener. I did this because I need to control the flow of D2 into the system but I also want to avoid touching anything even remotely connected to my 20kV power supply. The likleyhood that I would get shocked is low, but if I did I would die
+        so it is definitley worth the effort. I borrowed some aluminum scrap from my schools robotics team and created a stand that held the ball valve in place. I then squeezed the handle of the valve inbetween two metal plates to connect it to the motor shaft. I needed a VERY slow high torque motor for this
+        application so I could finley control how "open" the valve was. For this I decided to use a microwave turn table motor. If you think about the glass plate at the bottom of your microwave, it turns incredibly slowly and with a lot of torque. So this motor was perfect. I simply secured it in place and attached the
+        rotor to the handle using the two metal plates. I then used some doorbell wire to lengthen the distance I could operate it from. This requires no motor control because the motor for some reason changes directions when it hits high resistance. So when the valve is all the way open or all the way closed, all I have
+        to do to get it to turn the other way is to give it some power. See a video of it working below. You can see how it automatically switches directions.
+      </p>
+      <video width="auto" height="500px" controls>
+        <source src="plasmageneratortru_files/remotevalve.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+              </div>
+
+      <h2>Spectroscopy</h2>
+  <p>
+    Another ongoing prodject I am working on that works with my gas injection system is a hommade webcam spectrometer. It works by using a small piece of diffraction grating to split up light into bands wich then are seen by a webcam. A rasberrii pi then runs a program (my cousin did the coding) and interpets the bands
+    to produce and inensity/wavelength graph. So what does this have to do with this prodject? <p>
+
+ <p>
+    As a plasma, every compound has a it's own unique emission spectrum. So by doing spectroscopy on the plasma the chamber, I can determine the composition of the gas inside. This is important because when I start injecting gasses like D2,
+    I need to know how pure they are. Given I am using heavy water to make my D2 gas, one important impurity that this will help me look out for is oxygen. I have also been talking to other people who have used this gas injection system, and they have also found CO emissions, wich they think is from the mineral oil that the calcium is
+    stored in when it's sent in the mail. So basically all this data will help me improve my prossess and reduce impurities.
+  <p>
+
+    <figure class="figure my-auto col-md-10">
+      <img src="plasmageneratortru_files/spectra.png" />
+      <figcaption class="figure-caption">Example of what the webcam sees (top), and the graph made by the code (bottom).(This is not my data I am still building the spectrometer)</figcaption>
+    </figure>
+<p>
+Below is the build prossess. I basically made a small wood box and spraypainted it black. I then added some rollers at the top that allow me to have a removable cardboard top. In the back of the box is the camera set at an angle. The difraction grading sits midway down the box. In the front sits a pice of cardboard with a slit that only lets a small band of light through.
+  <p>
+    <div class="row">
+
+    <figure class="figure my-auto col-md-4">
+      <img src="plasmageneratortru_files/IMG_0863.JPEG" />
+      <figcaption class="figure-caption">Box next to the diffraction grading I want.</figcaption>
+    </figure>  <figure class="figure my-auto col-md-4">
+        <img src="plasmageneratortru_files/IMG_0864.JPEG" />
+        <figcaption class="figure-caption">Closeup</figcaption>
+      </figure>  <figure class="figure my-auto col-md-4">
+          <img src="plasmageneratortru_files/IMG_0866.JPEG" />
+          <figcaption class="figure-caption">Input slit that goes on the outside (top) and a small choke that sits inbetween the front and the diffraction grading (bottom)</figcaption>
+        </figure>  <figure class="figure my-auto col-md-4">
+            <img src="plasmageneratortru_files/IMG_0871.JPEG" />
+            <figcaption class="figure-caption">Spectrometer with front slit and biddle choke installed.</figcaption>
+
+          </div>
+
     </div>
   </main>
 </body>
